@@ -36,16 +36,18 @@ namespace OperacionesMatematicas
         private void Operaciones_Actualizacion(object sender, RoutedEventArgs e)
         {
             if (Suma_radioButton.IsChecked == true)
-                Resultado_textBox.Text = (int.Parse(Operando1_textBox.Text) + int.Parse(Operando2_textBox.Text)).ToString();
+                Resultado_textBox.Text = (double.Parse(Operando1_textBox.Text) + double.Parse(Operando2_textBox.Text)).ToString();
             else if (Resta_radioButton.IsChecked == true)
-                Resultado_textBox.Text = (int.Parse(Operando1_textBox.Text) - int.Parse(Operando2_textBox.Text)).ToString();
+                Resultado_textBox.Text = (double.Parse(Operando1_textBox.Text) - double.Parse(Operando2_textBox.Text)).ToString();
             else if (Multiplicacion_radioButton.IsChecked == true)
-                Resultado_textBox.Text = (int.Parse(Operando1_textBox.Text) * int.Parse(Operando2_textBox.Text)).ToString();
-            else if (Division_radioButton.IsChecked == true && int.Parse(Operando2_textBox.Text) != 0)
-                Resultado_textBox.Text = (int.Parse(Operando1_textBox.Text) / int.Parse(Operando2_textBox.Text)).ToString();
+                Resultado_textBox.Text = (double.Parse(Operando1_textBox.Text) * double.Parse(Operando2_textBox.Text)).ToString();
+            else if (Division_radioButton.IsChecked == true && double.Parse(Operando2_textBox.Text) != 0)
+                Resultado_textBox.Text = (double.Parse(Operando1_textBox.Text) / double.Parse(Operando2_textBox.Text)).ToString();
+            else if (Division_radioButton.IsChecked == true && double.Parse(Operando2_textBox.Text) == 0)
+                Resultado_textBox.Text = "Error";
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void LimpiarButton_Click(object sender, RoutedEventArgs e)
         {
             Datos_Default();
         }

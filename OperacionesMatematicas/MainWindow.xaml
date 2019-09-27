@@ -21,7 +21,7 @@
         <TextBox x:Name="Operando2_textBox" HorizontalAlignment="Left" Height="23" Margin="290,223,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextAlignment="Right" TextChanged="Operaciones_Actualizacion"/>
         <TextBlock x:Name="Resultado_TextBlock" HorizontalAlignment="Left" Margin="571,130,0,0" TextWrapping="Wrap" Text="Resultado" VerticalAlignment="Top"/>
         <TextBox x:Name="Resultado_textBox" HorizontalAlignment="Left" Height="23" Margin="571,151,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="120" TextAlignment="Right" IsReadOnly="True"/>
-        <Button x:Name="button" Content="Button" HorizontalAlignment="Left" Margin="34,346,0,0" VerticalAlignment="Top" Width="125" Height="38" Click="Button_Click"/>
+        <Button x:Name="Limpiar_button" Content="Limpiar" HorizontalAlignment="Left" Margin="34,346,0,0" VerticalAlignment="Top" Width="125" Height="38" Click="LimpiarButton_Click"/>
 
     </Grid>
 </Window>
